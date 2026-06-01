@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Form - Create Account</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="scene">
+        <main class="card">
+            <section class="reg-menu">
+                <div class="reg-content">
+                    <h1 class="reg-card-title">Create an Account</h1>
+
+                    <form onsubmit="event.preventDefault()">
+                        <div class="grid-layout">
+                            <div class="form-group">
+                                <label for="first-name">First Name</label>
+                                <input type="text" id="first-name" value="" />
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name">Last Name</label>
+                                <input type="text" id="last-name" />
+                            </div>
+
+                            <div class="form-group col-full">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" />
+                                <p class="text-belov">We'll never share your email with anyone else.</p>
+                            </div>
+
+                            <div class="form-group col-full">
+                                <div class="radio-group">
+                                    <label class="radio-label">
+                                        <input type="radio" name="gender" value="male" checked />
+                                        <div class="radio-custom"></div>
+                                        <span>Male</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="gender" value="female" />
+                                        <div class="radio-custom"></div>
+                                        <span>Female</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="country">Country</label>
+                                <select id="country">
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="po">Poland</option>
+                                    <option value="ua">Ukraine</option>
+                                    <option value="ge">Germany</option>
+                                    <option value="cn">China</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="city">City</label>
+                                <input type="text" id="city" />
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn-signup">Sign Up</button>
+
+                        <div class="text-footer">
+                            By clicking the 'Sign Up' button, you confirm that you accept our<br />
+                            <a href=".">Terms of Use</a> and <a href=".">Privacy Policy</a>
+                        </div>
+
+                        <div class="form-footer">
+                            Have an account? <label for="flip-toggle" class="flip-link">Log In</label>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
