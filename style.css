@@ -130,21 +130,6 @@ select:focus {
   box-shadow: 0 0 0 3px var(--c-input-focus);
 }
 
-select {
-  appearance: none;
-  background-image: url('../assets/icons/select-icon.svg');
-  background-repeat: no-repeat;
-  background-position: right 10px center;
-  background-size: 18px;
-  padding-inline-end: 10px;
-}
-
-select option[selected] {
-  font-size: 0.9375rem;
-  color: var(--c-text-muted);
-  font-family: var(--font-inter);
-  letter-spacing: -0.01em;
-}
 
 .helper-text {
   font-size: 0.8125rem;
